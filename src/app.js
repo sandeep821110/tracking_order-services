@@ -138,6 +138,12 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.use('/god',(req, res) => {
+  res.json({
+    success: true,
+    message: "You have found the secret god endpoint! 🧙‍♂️✨"
+    });
+});
 // Global error handler (must be absolutely last)
 app.use(errorHandler);
 
