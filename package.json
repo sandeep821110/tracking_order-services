@@ -1,0 +1,40 @@
+{
+  "name": "tracking_order-services",
+  "version": "1.0.0",
+  "description": "Professional order tracking microservice with real-time status updates",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --silent --forceExit --detectOpenHandles"
+  },
+  "keywords": [
+    "order",
+    "tracking",
+    "microservice",
+    "express",
+    "mongodb",
+    "redis",
+    "rabbitmq"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^1.0.3",
+    "cors": "^2.8.6",
+    "debug": "^4.3.4",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "ioredis": "^5.10.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.3",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
